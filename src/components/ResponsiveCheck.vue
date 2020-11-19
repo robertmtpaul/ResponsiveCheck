@@ -68,7 +68,7 @@ export default {
 .laptop {
 	background-image: '../assets/iphone-5.png';
 	width: 1024px;
-	height: 768px;
+	height: 640px;
 	border: none;
 }
 
