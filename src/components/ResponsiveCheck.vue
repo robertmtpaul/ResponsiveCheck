@@ -1,6 +1,6 @@
 <template>
 	<div id="two-way-binding" class="demo">
-		<input v-model="siteURL" />
+		<input type="text" v-model="siteURL" />
 		<p>You are viewing this site: {{ siteURL }} responsive</p>
 		
 		<div class="iphone">
@@ -14,7 +14,7 @@
 export default {
 	data() {
 		return {
-			siteURL: 'http://mfdc.biz',
+			siteURL: 'https://4040creative.com.au/',
 		};
 	},
 };
