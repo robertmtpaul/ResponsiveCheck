@@ -98,6 +98,7 @@ export default {
 	width: 375px;
 	height: 812px;
 	border: none;
+	padding: 27px 0 27px 0px;
 }
 
 .tablet {
