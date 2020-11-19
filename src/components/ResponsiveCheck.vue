@@ -1,11 +1,21 @@
 <template>
-	<div id="two-way-binding" class="demo">
+	<div id="two-way-binding" class="wrapper">
 		<input type="text" v-model="siteURL" />
 		<p>You are viewing this site: {{ siteURL }} responsive</p>
 		
-		<div class="iphone">
+		<div class="iphone-4 screen">
 			<iframe :src="siteURL"></iframe>
 		</div>
+		<div class="laptop screen">
+			<iframe :src="siteURL"></iframe>
+		</div>
+		<div class="tablet screen">
+			<iframe :src="siteURL"></iframe>
+		</div>
+		<div class="iphone-5 screen">
+			<iframe :src="siteURL"></iframe>
+		</div>
+
 
 	</div>
 </template>
@@ -23,9 +33,7 @@ export default {
 
 <style scoped>
 
-.iphone {
-	background-image: '../assets/iphone-5.png'; 
-	font-family: sans-serif;
+.screen {
 	border: 1px solid #eee;
 	border-radius: 2px;
 	padding: 20px 30px;
@@ -35,7 +43,25 @@ export default {
 	overflow-x: auto;
 }
 
-.demo {
+/* .iphone-X {
+	background-image: '../assets/iphone-X.png'; 
+} */
+
+.iphone-4 {
+	background-image: '../assets/iphone-4.png'; 
+}
+
+.laptop {
+	background-image: '../assets/iphone-5.png'; 
+}
+
+.desktop {
+	background-image: '../assets/desktop.png'; 
+}
+
+
+
+.wrapper {
 	font-family: sans-serif;
 }
 
