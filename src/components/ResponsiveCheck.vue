@@ -3,17 +3,20 @@
 		<input type="text" v-model="siteURL" />
 		<p>You are viewing this site: {{ siteURL }} responsive</p>
 		
-		<div class="iphone-4 screen">
-			<iframe :src="siteURL"></iframe>
+		<div>
+			<iframe :src="siteURL" class="iphone-4 screen"></iframe>
 		</div>
-		<div class="laptop screen">
-			<iframe :src="siteURL"></iframe>
+
+		<div>
+			<iframe :src="siteURL" class="tablet screen"></iframe>
 		</div>
-		<div class="tablet screen">
-			<iframe :src="siteURL"></iframe>
+
+		<div>
+			<iframe :src="siteURL" class="laptop screen"></iframe>
 		</div>
-		<div class="iphone-5 screen">
-			<iframe :src="siteURL"></iframe>
+
+		<div>
+			<iframe :src="siteURL" class="desktop screen"></iframe>
 		</div>
 
 
@@ -48,26 +51,37 @@ export default {
 } */
 
 .iphone-4 {
-	background-image: '../assets/iphone-4.png'; 
+	background-image: '../assets/iphone-4.png';
+	width: 375px;
+	height: 812px;
+	border: none;
+ 
+}
+
+.tablet {
+	background-image: '../assets/tablet.png'; 
+	width: 768px;
+	height: 1024px;
+	border: none;
 }
 
 .laptop {
-	background-image: '../assets/iphone-5.png'; 
+	background-image: '../assets/iphone-5.png';
+	width: 1024px;
+	height: 768px;
+	border: none;
 }
 
 .desktop {
 	background-image: '../assets/desktop.png'; 
+	width: 1920px;
+	height: 1080px;
+	border: none;
+
 }
-
-
 
 .wrapper {
 	font-family: sans-serif;
 }
 
-iframe {
-	width: 375px;
-	height: 812px;
-	border: none;
-}
 </style>
